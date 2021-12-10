@@ -139,7 +139,7 @@ class FragmentA : Fragment(), OnMapReadyCallback {
 						var distance = locP.distanceTo(locB)
 						Log.d("Distance", "${distance.toDouble()}")
 						Log.d("Diameter", "${prefDia}")
-						if (distance.toDouble() > prefDia && prefDia!=0.0 ) {
+						if (distance.toDouble() > prefDia && prefDia>=1.0 ) {
 							Log.d("asdf", "asdf")
 							Toast.makeText(mainActivity, "환자가 범위 바깥에 있습니다.", Toast.LENGTH_SHORT)
 								.show()
